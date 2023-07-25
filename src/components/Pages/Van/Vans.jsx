@@ -44,7 +44,7 @@ function Van() {
               <div className='van__card-indivisual' key={van.id}>
                 <Link to={`/van/${van.id}`}>
                   <div className='van__card-img'>
-                    <img src={van.imageUrl} />
+                    <img src={van.imageUrl} alt='img' />
                   </div>
                   <div className='van__card-description'>
                     <div className='van__card-description-name'>

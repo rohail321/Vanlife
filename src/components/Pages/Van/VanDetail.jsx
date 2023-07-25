@@ -28,7 +28,7 @@ function VanDetail() {
       <div className='van-detail'>
         <div className='van-detail__left'>
           <div className='van-detail__left-img'>
-            <img src={van.imageUrl} />
+            <img src={van.imageUrl} alt='img' />
           </div>
         </div>
         <div className='van-detail__right'>
