@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 function LandingPage() {
   return (
     <section>
@@ -15,7 +15,10 @@ function LandingPage() {
             </p>
           </div>
           <div className='landingpage__btn'>
-            <button className='landingpage__btn-btn'>Find your van</button>
+            <button className='landingpage__btn-btn'>
+              {" "}
+              <Link to='/vans'>Find your van</Link>{" "}
+            </button>
           </div>
         </div>
       </div>

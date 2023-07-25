@@ -45,3 +45,8 @@
   font-style: normal;
   line-height: 31.662px;
 }
+
+.landingpage__btn-btn a {
+  text-decoration: none;
+  color: white;
+}

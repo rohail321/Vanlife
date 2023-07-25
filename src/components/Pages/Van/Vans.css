@@ -1,0 +1,102 @@
+.van {
+  display: flex;
+  flex-direction: column;
+}
+
+.van__heading {
+  display: flex;
+  color: #161616;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  justify-content: center;
+}
+
+.van__btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.van__btn-btn {
+  border-radius: 5px;
+  background: #ffead0;
+  display: flex;
+}
+
+.van__btn-btn-span {
+  padding: 6px 26px 7px 26px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  color: #4d4d4d;
+}
+
+.van__btn-filter {
+  display: flex;
+  alighn-items: center;
+}
+
+.van__btn-filter__btn {
+  border: none;
+  outline: none;
+
+  background: none;
+  cursor: pointer;
+  text-align: center;
+}
+.van__btn-filter__btn span {
+  text-decoration-line: underline;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  color: #4d4d4d;
+}
+
+.van__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 60px 60px;
+  gap: 190px;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.van__card-indivisual {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.van__card-indivisual a {
+  text-decoration: none;
+  color: black;
+}
+.van__card-img img {
+  width: 229.227px;
+  height: 229.227px;
+  border-radius: 5px;
+}
+.van__card-description {
+  display: flex;
+  flex-direction: row;
+}
+
+.van__card-description-price {
+  margin-left: auto;
+}
+
+.van__card-btn button {
+  padding: 7px 26px 7px 26px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 31.662px;
+  font-style: normal;
+  color: white;
+}
