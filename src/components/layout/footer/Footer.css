@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  width: 100%;
+  padding: 25.681px 106.133px 25.4px 106px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background: #252525;
+  position: fixed;
+  bottom: 0;
+  height: 10px;
+}
+
+.footer p {
+  color: #aaa;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22.923px;
+}

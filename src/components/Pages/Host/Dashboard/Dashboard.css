@@ -1,0 +1,73 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px 20px 20px;
+}
+
+.dashboard__welcome {
+  background: #ffead0;
+}
+
+.dashboard__welcome h2 {
+  color: #161616;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: center;
+}
+
+.dashboard__welcome-mid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dashboard__welcome-mid a {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+.dashboard__reviews {
+  display: flex;
+  flex-direction: row;
+  background: #ffddb2;
+  align-items: center;
+  justify-content: space-between;
+}
+.dashboard__reviews-details a {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+/* .dashboard__reviews-score {
+  display: flex;
+  flex: 0.9;
+}
+.dashboard__reviews-details {
+  display: flex;
+  flex: 0.1;
+} */
+.dashboard__vans {
+  display: flex;
+  flex-direction: column;
+}
+.dashboard__vans-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.dashboard__vans-heading h2 {
+  color: #161616;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.dashboard__vans-heading__link a {
+  text-decoration: none;
+  color: black;
+}

@@ -1,0 +1,36 @@
+.dashboard__vans-list {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  align-items: center;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+.dashboard__vans-list__img {
+  display: flex;
+  flex: 0.2;
+  margin-left: 10px;
+}
+.dashboard__vans-list__img img {
+  width: 70.877px;
+  height: 70.877px;
+}
+.dashboard__vans-list__title {
+  display: flex;
+  flex: 0.7;
+}
+.dashboard__vans-list__edit {
+  display: flex;
+  flex: 0.1;
+}
+
+.dashboard__vans-list__title-hd {
+  display: flex;
+  flex-direction: column;
+}
+.dashboard__vans-list__edit button {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}

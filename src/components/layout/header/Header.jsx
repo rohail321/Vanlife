@@ -23,6 +23,9 @@ function Header() {
             <li>
               <Link to='/vans'>Vans</Link>
             </li>
+            <li>
+              <Link to='/host'>Host</Link>
+            </li>
           </ul>
         </div>
       </div>
