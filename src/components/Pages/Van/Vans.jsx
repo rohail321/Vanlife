@@ -2,10 +2,11 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 import "./Vans.css";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 
 function Van() {
   const [vans, setVans] = useState([]);
+  const [searchParams, setSearchParams] = useSearchParams();
   useEffect(() => {
     fetchVanDataApi();
   }, []);
@@ -16,6 +17,10 @@ function Van() {
       setVans(res.data.vans);
     } catch (error) {}
   };
+  const filterType = searchParams.get("type");
+  const filterIterate = filterType
+    ? vans.filter((van) => van.type.toLowerCase() === filterType)
+    : vans;
   return (
     <section>
       <div className='van'>
@@ -23,16 +28,25 @@ function Van() {
           <h2>Explore our van options</h2>
         </div>
         <div className='van__btn'>
-          <button className='van__btn-btn'>
+          <button
+            className='van__btn-btn'
+            onClick={() => setSearchParams({ type: "simple" })}
+          >
             <span className='van__btn-btn-span'>Simple</span>
           </button>
-          <button className='van__btn-btn'>
+          <button
+            className='van__btn-btn'
+            onClick={() => setSearchParams({ type: "luxury" })}
+          >
             <span className='van__btn-btn-span'>Luxury</span>
           </button>
-          <button className='van__btn-btn'>
+          <button
+            className='van__btn-btn'
+            onClick={() => setSearchParams({ type: "rugged" })}
+          >
             <span className='van__btn-btn-span'>Rugged</span>
           </button>
-          <div className='van__btn-filter'>
+          <div className='van__btn-filter' onClick={() => setSearchParams({})}>
             <button className='van__btn-filter__btn'>
               <span>Clear Filter</span>
             </button>
@@ -40,7 +54,7 @@ function Van() {
         </div>
         <div className='van__card'>
           {vans &&
-            vans.map((van) => (
+            filterIterate.map((van) => (
               <div className='van__card-indivisual' key={van.id}>
                 <Link to={`/van/${van.id}`}>
                   <div className='van__card-img'>
