@@ -1,0 +1,87 @@
+.VanDetail {
+  display: flex;
+  flex-direction: column;
+}
+.VanDetail__link {
+  margin: 20px 100px 20px 100px;
+}
+.van-detail {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: 20px 100px 100px 100px;
+  background: #fff;
+}
+
+.van-detail__left-img img {
+  width: 497.323px;
+  height: 490.346px;
+  border-radius: 5px;
+}
+
+.van-detail__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.van-detail__right-type {
+  margin-bottom: 20px;
+  color: #ffead0;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 31.662px;
+  background: #e17654;
+  border-radius: 5px;
+  width: 85.711px;
+  height: 33.886px;
+}
+.van-detail__right-name {
+  color: #161616;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33.652px;
+}
+
+.van-detail__right-price {
+  color: #161616;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44.152px;
+}
+
+.van-detail__right-description {
+  color: #161616;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23.919px;
+}
+
+.van-detail__right-description p {
+  text-align: left;
+}
+
+.van-detail__header-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 40px;
+  align-items: center;
+}
+
+.van-detail__header-list > li > a {
+  text-decoration: none;
+  color: black;
+}
+.van-detail__header-list > li {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22.923px;
+  text-decoration-line: underline;
+  width: 51.825px;
+  height: 22.92;
+}

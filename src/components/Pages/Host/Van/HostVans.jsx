@@ -12,7 +12,7 @@ function HostVans() {
   }, []);
   const fetchVansData = async () => {
     try {
-      const res = await axios.get(`/api/vans`);
+      const res = await axios.get(`/api/host/vans`);
       setVans(res.data.vans);
     } catch (error) {}
   };
